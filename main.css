@@ -93,11 +93,11 @@ color: #ffffff;
     width: 100%;
     height: 60px;
     padding-left: 10px;
-    padding-right: 15px;
-    border-radius: 5px;
+    
+    border-radius: 10px;
     border: #02A28F solid 2px;
     background-color: #02A28F;
- 
+ object-fit: cover;
 }
 
 .titulo-caixa h2{
@@ -160,11 +160,6 @@ color: #ffffff;
 
 }
 
-.titulo-posts-recentes{
-    border: #c21c1c solid 1px;
-     border: 2px solid;
-  }
-
 
   #posts-recentes{
     display: grid;
@@ -179,7 +174,7 @@ color: #ffffff;
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 980px;
+    height: 60em;
     max-height: fit-content;
     border:  #c21c1c solid 1px;
     border-radius: 10px;
@@ -194,3 +189,20 @@ color: #ffffff;
        object-fit: cover;
        
   }
+
+  .titulo-posts-recentes{
+        display: flex;
+            border-radius: 10px;
+    background-color:  #02A28F;
+        box-shadow: #e0e0e0e0 0 10px 6px;
+        gap: 10px;
+        margin-bottom: 1em;
+     
+}
+.titulo-posts-recentes h2{
+    color: white;
+    font-size: 400;
+    font-weight: 700;
+    margin-left: 15px;
+
+    }
