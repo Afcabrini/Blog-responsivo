@@ -1,142 +1,146 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
- <meta charset="UTF-8">
- <title>The Dev News</title>
- <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+DK+Loopet:wght@100..400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Dev News</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
 </head>
 
-<header>
-        <nav>
-            <div class="cabecalho">
-                <h1> The Dev News</h1>
-            </div>
-        </nav>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="tituloPrincipal">The Dev News</h1>
+        </div>
     </header>
 
-	<body> 
-    <main>
-       
-    <div class="container-principal">
-     
-			 <div class="banner1">
-              
-                    <div class="banner-text">
-                        <p id="banner-text2">opnião</p>
-                        <h2 id="banner-text1">Como  é  ser  um desenvolvedor</h2>
-                        <p id="banner-text2"><b>By</b> Fabio Tetsuo</p>
-                    </div>
-              </div>
-          
-            
+ 
+    <!-- Tamanho determinado -->
 
-            <!-- separação de caixas-->
+    <div class="mainContent container">
+        <main class="main">
 
-<aside id="container-posts">
-   
-   <div class="titulo-caixa"> <h2>Posts Populares</h2></div>
-    
-    <div class="posts">
-        <img src="/imagens/img1.jpg" alt="m desenvolvedor" class="imagem-caixa">
-         <div id="descricao"><h3>Desenvolvimento atual</h3>
-        <p>22 Agosto 2022</p></div>
+            <!-- FEATURED POST -->
+            <section class="featuredPost">
+                <div class="featuredContent">
+                    <span class="category">opinião</span>
+                    <h2>Como é ser um desenvolvedor</h2>
+                    <p><b>By</b> Fabio Tetsuo</p>
+                </div>
+            </section>
+
+            <!-- RECENT POSTS -->
+            <section class="recentPosts">
+                <div class="sectionHeader">
+                    <h2>Posts mais recentes</h2>
+                    <a href="#" class="viewAll">Ver todos</a>
+                </div>
+
+                <div class="postsGrid">
+                    <article class="postCard">
+                        <img src="imagens/img1.jpg" alt="Imagem de um desenvolvedor" class="postImg">
+                        <div class="postContent">
+                            <span class="category">desenvolvimento</span>
+                            <h3 class="postTitle">Desenvolvimento mobile</h3>
+                            <p class="author"><b>By</b> Fabio Tetsuo</p>
+                            <p class="excerpt">Lorem ipsum dolor sit amet consectetur. In vitae urna commodo amet congue
+                                integer dapibus. Interdum semper mauris convallis fusce enim odio. Vitae montes
+                                ridiculus felis</p>
+                            <p>22 Agosto 2022</p>
+                        </div>
+                    </article>
+
+                    <article class="postCard">
+                        <img src="imagens/img2.jpg" alt="Imagem de um desenvolvedor" class="postImg">
+                        <div class="postContent">
+                            <span class="category">design</span>
+                            <h3 class="postTitle">A importância do UX/UI.</h3>
+                            <p class="author"><b>By</b> Fabio Tetsuo</p>
+                            <p class="excerpt">Lorem ipsum dolor sit amet consectetur. In vitae urna commodo amet congue
+                                integer dapibus. Interdum semper mauris convallis fusce enim odio. Vitae montes
+                                ridiculus felis</p>
+                            <p>22 Agosto 2022</p>
+                        </div>
+                    </article>
+
+                    <article class="postCard">
+                        <img src="imagens/img3.jpg" alt="Imagem de um desenvolvedor" class="postImg">
+                        <div class="postContent">
+                            <span class="category">programação</span>
+                            <h3 class="postTitle">Primeiros passos com JavaScript.</h3>
+                            <p class="author"><strong>By</strong> Fabio Tetsuo</p>
+                            <p class="excerpt">Lorem ipsum dolor sit amet consectetur. In vitae urna commodo amet congue
+                                integer dapibus. Interdum semper mauris convallis fusce enim odio. Vitae montes
+                                ridiculus felis</p>
+                            <p>22 Agosto 2022</p>
+                        </div>
+                    </article>
+
+                    <article class="postCard">
+                        <img src="/imagens/img4.jpg" alt="Imagem de um desenvolvedor" class="postImg">
+                        <div class="postContent">
+                            <span class="category">carreira</span>
+                            <h3 class="postTitle">Como conseguir seu primeiro estágio.</h3>
+                            <p class="author"><b>By</b> Fabio Tetsuo</p>
+                            <p class="excerpt">Lorem ipsum dolor sit amet consectetur. In vitae urna commodo amet congue
+                                integer dapibus. Interdum semper mauris convallis fusce enim odio. Vitae montes
+                                ridiculus felis</p>
+                            <p>22 Agosto 2022</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+            <section class="popularPosts">
+                <h2>Posts Populares</h2>
+                <ul>
+                    <li>
+                        <img src="imagens/img1.jpg" alt="Imagem de um desenvolvedor">
+                        <div>
+                            <p class="postTitle">Desenvolvimento atual</p>
+                            <time datetime="2022-08-22">22 Agosto 2022</time>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="imagens/img2.jpg" alt="Imagem de um desenvolvedor">
+                        <div>
+                            <p class="postTitle">GitLab vs GitHub</p>
+                            <time datetime="2022-08-22">22 Agosto 2022</time>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="imagens/img3.jpg" alt="Imagem de um desenvolvedor">
+                        <div>
+                            <p class="postTitle">Café atrapalha?</p>
+                            <time datetime="2022-08-22">22 Agosto 2022</time>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="categories">
+                <h2>Categorias</h2>
+                <ul>
+                    <li>> saúde <span>(01)</span></li>
+                    <li>> desenvolvimento <span>(02)</span></li>
+                    <li>> produtividade <span>(02)</span></li>
+                    <li>> opinião <span>(01)</span></li>
+                </ul>
+            </section>
+        </aside>
     </div>
 
-    
-    <div class="posts">
-        <img src="/imagens/img2.jpg" alt="Imagem de um dolvedor">
-        <div id="descricao">  <h3> GiftLab vs GitHub</h3>
-        <p> 22 Agosto 2022</p></div>
-    </div>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>Copyright@The Dev News</p>
+    </footer>
 
-    <div class="posts">
-        <img src="/imagens/img3.jpg" alt="Imagem de um desor">
-       <div id="descricao"><h3>Café atrapalha?</h3>
-        <p> 22 Agosto 2022</p></div>
-       </aside>
-</main>
-    <!-- Meio -->
-<main id="teste">
-    </section>
-   <section class="qualquer-coisa">
-     <div class="titulo-posts-recentes">
-        <h2>Posts mais recentes</h2>
-        <button>Ver todos</button>
-     </div>
-
-    <div id="posts-recentes">
-
-        <div class="cards">
-
-                <img src="/cards/imagem1.jpg" alt="Imagem de um desenvolvedor" class="imagem-posts-recentes">
-                <p><span>desenvolvimento</p></span>
-                <h3>Desenvolvimento mobile</h3>
-                <p><b>By</b> Fabio Tetsuo</p>
-                <p>Lorem ipsum dolor sit amet consectetur. In vitae urna commodo amet congue integer dapibus. Interdum semper mauris convallis fusce enim odio. Vitae montes ridiculus felis</p>
-                <p>22 Agosto 2022</p>
-        </div>
-
-        <div class="cards">
-
-                <img src="/cards/imagem2.jpg" alt="Imagem de um desenvolvedor" class="imagem-posts-recentes">
-                <p><span> design </span></p>
-                <h3>A importância do UX/UI.</h3>
-                <p><b>By</b> Fabio Tetsuo</p>
-                <p>Lorem ipsum dolor sit amet consectetur. In vitae urna commodo amet congue integer dapibus. Interdum semper mauris convallis fusce enim odio. Vitae montes ridiculus felis</p>
-                <p>22 Agosto 2022</p>
-            </div>
-
-        <div class="cards">
-
-                <img src="/cards/imagem3.jpg" alt="Imagem de um desenvolvedor" class="imagem-posts-recentes">
-                <p><span>programação</p></span>
-                <h3>Primeiros passos com JavaScript.</h3>
-                <p><strong>By</strong> Fabio Tetsuo</p>
-                <p>Lorem ipsum dolor sit amet consectetur. In vitae urna commodo amet congue integer dapibus. Interdum semper mauris convallis fusce enim odio. Vitae montes ridiculus felis</p>
-                <p>22 Agosto 2022</p>
-        </div>
-
-        <div class="cards">
-            
-                <img src="/cards/imagem4.jpg" alt="Imagem de um desenvolvedor" class="imagem-posts-recentes">
-                <p><span>carreira</p></span>
-                <h3>Como conseguir seu primeiro estágio.</h3>
-                <p><b>By</b> Fabio Tetsuo</p>
-                <p>Lorem ipsum dolor sit amet consectetur. In vitae urna commodo amet congue integer dapibus. Interdum semper mauris convallis fusce enim odio. Vitae montes ridiculus felis</p>
-                <p>22 Agosto 2022</p>
-        </div>
-    </div>
-   </section>
-
-  
-<div class="container-categorias">
-       <div class="titulo-caixa"> <h2>Categorias</h2></div>
-
-      <section id="lista-categorias">
-        
-       
-              
-      <div class="categorias">  <p>> saude</p>
-        <p>(01)</p> </div>
-
-       <div class="categorias"><p>>desenvolvimento</p>
-        <p>(02)</p></div>        
-        
-       <div class="categorias"><p>> produtividade</p>
-        <p>(02)</p></div>     
-
-        <div class="categorias"><p>> opnião</p>
-        <p>(01)</p></div>     
-
-</section>
-</div>       
-</main>  </body>
-
-<footer>
-    <div class="container-footer">
-        <h3>Copyright@The Dev News</h3>
-    </div></footer>
 </html>
